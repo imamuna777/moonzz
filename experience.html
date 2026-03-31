@@ -3,7 +3,41 @@
 	<title>Experience</title>
 	<style>
 		body{
-		background-color:lightgreen;
+		animation: slideIn 1.5s;
+		}
+		@keyframes slideIn{
+		from{
+		transform: translateX(30px);
+		opacity:0;
+		}
+		to{
+		transform: translateX(0);
+		opacity:1;
+		}
+		}
+		.menu{
+		text-align:left;
+		margin-left:20px;
+		}
+		.menu a{
+		text-decoration:none;
+		font-size:14px;
+		margin-left:15px;
+		color:blue;
+		}
+		.menu a:hover{
+		color:red;
+		}
+		body{
+		font-family:poppin;
+		text-align:center;
+		background:#DBF9DB;
+		}
+		h2{
+		margin-top:50px;
+		}
+		body{
+		background-color:#DBF9DB;
 		}
 		h1{
 		color:darkgreen;
@@ -16,21 +50,21 @@
 	<title>Biodata</title>
 	<link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor="lightgreen">
-<center>
-<h1>WELCOME TO MY WEBSITE</h1>
-<h2><i><u><b>BRAND NEW WORLD</b></i></u></h2>
-<hr width="80%">
+<body bgcolor="#DBF9DB">
+<div class="menu">
 <a href="index.html">HOME |</a>
 <a href="biodata.html">BIODATA |</a>
 <a href="experience.html">EXPERIENCE |</a>
 <a href="education.html">EDUCATION |</a>
 <a href="family.html">FAMILY |</a>
 <a href="gallery.html">GALLERY |</a>
-<hr width="80%">
+</div>
+<hr width="100%">
+<h2>EXPERIENCE</h2>
 <div id="home">
 <img src="dino.png" width="200" height="200">
 <br>
+<center>
 <table border="2" cellpadding="12" cellspacing="5" bgcolor="lightpink" width="80%">
 <tr>
 	<td align="center" colspan="2" bgcolor="lightgreen">
@@ -90,6 +124,8 @@
 	</ul>
 	</td>
 </tr>
+<br>
+</table>
 </div>
 </center>
 <center>

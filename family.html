@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Family</title>
+	<style>
+		body{
+		animation: slideIn 1.5s;
+		}
+		@keyframes slideIn{
+		from{
+		transform: translateX(30px);
+		opacity:0;
+		}
+		to{
+		transform: translateX(0);
+		opacity:1;
+		}
+		}
+		.menu{
+		text-align:left;
+		margin-left:20px;
+		}
+		.menu a{
+		text-decoration:none;
+		font-size:14px;
+		margin-left:15px;
+		color:blue;
+		}
+		.menu a:hover{
+		color:red;
+		}
+		body{
+		font-family:poppin;
+		text-align:center;
+		background:#DBF9DB;
+		}
+		h2{
+		margin-top:50px;
+		}
+
+		body{
+		font-family:arial;
+		text-align:center;
+		background:#DBF9DB;
+		}
+		h2{
+		margin-top:50px;
+		}
+		.slider{
+		width:70%;
+		margin:auto;
+		overflow:hidden;
+		}
+		.slides{
+		display:flex;
+		transition:0.5s;
+		}
+		.family{
+		width:100%;
+		padding:20px;
+		}
+		.family img{
+		width:120px;
+		height:120px;
+		border-radius:50%;
+		}
+		button{
+		padding:10px 20px;
+		margin:20px;
+		cursor:pointer;
+		font-size:18px;
+		}
+		.dots{
+		margin-top:20px;
+		}
+		.dot{
+		height:12px;
+		width:12px;
+		margin:5px;
+		background:#bbb;
+		display:inline-block;
+		border-radius:50%;
+		cursor:pointer;
+		}
+		.active{
+		background:#333;
+		}
+	</style>
+	</head>
+<body bgcolor="#DBF9DB">
+<div class="menu">
+<a href="index.html">HOME |</a>
+<a href="biodata.html">BIODATA |</a>
+<a href="experience.html">EXPERIENCE |</a>
+<a href="education.html">EDUCATION |</a>
+<a href="family.html">FAMILY |</a>
+<a href="gallery.html">GALLERY |</a>
+</div>
+<hr width="100%">
+<h2>FAMILY</h2>
+<div id="home">
+<div class="slider">
+<div class="slides" id="slides">
+<div class="family">
+<img src="ayah.jpg">
+<h3>Mohd Asri</h3>
+<h3>Father</h3>
+<p>"loves fishing."</p>
+</div>
+<div class="family">
+<img src="ibu.jpg">
+<h3>Maliana</h3>
+<h3>Mother</h3>
+<p>"A lovely mother who is a teacher."</p>
+</div>
+<div class="family">
+<img src="iqbal.jpg">
+<h3>Iqbal</h3>
+<h3>Brother</h3>
+<p>"My older brother who always bully me."</p>
+</div>
+<div class="family">
+<img src="zaty.jpg">
+<h3>Izzaty</h3>
+<h3>Sister</h3>
+<p>"My older sister who study in USIM too."</p>
+</div>
+<div class="family">
+<img src="dinah.jpg">
+<h3>Irdina</h3>
+<h3>Me</h3>
+<p>"A cute and gorgeous girl."</p>
+</div>
+<div class="family">
+<img src="syirah.jpg">
+<h3>Insyirah</h3>
+<h3>Sister</h3>
+<p>"My younger sister and she's quite introvert."</p>
+</div>
+<div class="family">
+<img src="icad.jpg">
+<h3>Irsyad</h3>
+<h3>Brother</h3>
+<p>"My younger brother and annoying."</p>
+</div>
+</div>
+<button onclick="prev()">&lt;</button>
+<span class="dot" onclick="goSlide(0)"></span>
+<span class="dot" onclick="goSlide(1)"></span>
+<span class="dot" onclick="goSlide(3)"></span>
+<button onclick="next()">&gt;</button>
+<script>
+let index = 0;
+const slides = document.getElementById("slides");
+const total = slides.children.length;
+function showSlide(){
+slides.style.transform = "translateX(" + (-index * 100) + "%)";
+}
+function next(){
+index++;
+if(index >= total){
+index = 0;
+}
+showSlide();
+}
+function prev(){
+index--;
+if(index < 0){
+index = total - 1;
+}
+showSlide();
+}
+</script>
+<center>
+<hr width="80%">
+<footer>
+<p>Contact me at:<a href=mailto:imamuna777@gmail.com>imamuna777@gmail.com</a></p>
+<p>&copy; 2026 Muna. All right reserved</p>
+</footer>
+</center>
+</body>
+</html>
