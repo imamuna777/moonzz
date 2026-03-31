@@ -36,7 +36,6 @@
 		h2{
 		margin-top:50px;
 		}
-
 		body{
 		background-color:#DBF9DB;
 		}
@@ -46,6 +45,28 @@
 		}
 		p{
 		font-size:18px;
+		}
+		.timeline{
+		list-style:none;
+		border-left:7px solid pink;
+		padding-left:20px;
+		}
+		.timeline li{
+		margin-bottom:20px;
+		position:relative;
+		}
+		.timeline li::before{
+		content:'';
+		position:absolute;
+		left:-12px;
+		top:5px;
+		height:15px;
+		background:pink;
+		border-radius:50%;
+		}
+		.date{
+		font-weight:bold;
+		color:#FF69B4;
 		}
 	</style>
 	</head>
@@ -59,10 +80,25 @@
 <a href="gallery.html">GALLERY |</a>
 </div>
 <hr width="100%">
-<h2>EDUCATION</h2>
+<h2>EDUCATION&#127891</h2>
 <div id="home">
 <img src="dino.png" width="200" height="200">
 </div>
+<h2>Education Journey</h2>
+<ul class="timeline">
+	<li>
+	<span class="date">2011</span>
+	<p>Joined kindergarden</p>
+	</li>
+	<li>
+	<span class="date">2014</span>
+	<p>Satrted elementary school</p>
+	</li>
+	<li>
+	<span class="date">2020</span>
+	<p>Satrted secondary school</p>
+	</li>
+</ul>
 <center>
 <hr width="80%">
 <footer>
